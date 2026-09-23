@@ -1,0 +1,105 @@
+<svg width="100%" height="auto" viewBox="0 0 900 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0e1626" />
+      <stop offset="100%" stop-color="#0a101b" />
+    </linearGradient>
+
+    <!-- Subtle Cyan Glow Filter -->
+    <radialGradient id="cyanGlow" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Blue Glow for Name -->
+    <radialGradient id="blueGlow" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#38bdf8" fill-opacity="0.08" />
+    </pattern>
+
+    <!-- Node Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="900" height="230" rx="14" fill="url(#bgGrad)" />
+  <rect width="900" height="230" rx="14" fill="url(#cyanGlow)" />
+  <rect width="900" height="230" rx="14" fill="url(#blueGlow)" />
+  <rect width="900" height="230" rx="14" fill="url(#grid)" />
+  <rect x="0.5" y="0.5" width="899" height="229" rx="13.5" stroke="#1e293b" stroke-opacity="0.8" />
+
+  <!-- Left Accent Bar -->
+  <rect x="0" y="45" width="4" height="140" rx="2" fill="#38bdf8" />
+
+  <!-- Technical Node / Pipeline Geometry (Right Side) -->
+  <g transform="translate(560, 42)">
+    <!-- Architecture Subtitle -->
+    <text x="140" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#64748b" letter-spacing="1.5" text-anchor="middle">DATA &amp; AI WORKFLOW</text>
+
+    <!-- Connecting Bus Line -->
+    <line x1="30" y1="65" x2="250" y2="65" stroke="#1e293b" stroke-width="2" />
+    <line x1="30" y1="65" x2="210" y2="65" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 4" stroke-opacity="0.6" />
+
+    <!-- Step 1: Ingest Node -->
+    <g transform="translate(30, 65)">
+      <circle cx="0" cy="0" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="4" fill="#38bdf8" />
+      <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">Ingest</text>
+      <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">APIs · Raw</text>
+    </g>
+
+    <!-- Step 2: Pipeline / Transform Node -->
+    <g transform="translate(105, 65)">
+      <circle cx="0" cy="0" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="4" fill="#38bdf8" />
+      <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">Transform</text>
+      <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">ETL · Features</text>
+    </g>
+
+    <!-- Step 3: Database / Store Node -->
+    <g transform="translate(180, 65)">
+      <rect x="-14" y="-14" width="28" height="28" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+      <!-- DB disk layers -->
+      <line x1="-7" y1="-5" x2="7" y2="-5" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-7" y1="0" x2="7" y2="0" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-7" y1="5" x2="7" y2="5" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+      <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">Relational</text>
+      <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">PostgreSQL</text>
+    </g>
+
+    <!-- Step 4: ML / Inference Node -->
+    <g transform="translate(255, 65)">
+      <circle cx="0" cy="0" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" filter="url(#glow)" />
+      <polygon points="0,-6 6,5 -6,5" fill="#38bdf8" />
+      <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">Applied ML</text>
+      <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle">Screener · AI</text>
+    </g>
+  </g>
+
+  <!-- Left Content Block -->
+  <g transform="translate(56, 48)">
+    <!-- Small Status Pill -->
+    <rect x="0" y="0" width="168" height="22" rx="11" fill="#132338" stroke="#1e3a5f" stroke-width="1" />
+    <circle cx="11" cy="11" r="3.5" fill="#38bdf8" />
+    <text x="22" y="14.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#7dd3fc" letter-spacing="1.2">SYSTEMS &amp; PIPELINES</text>
+
+    <!-- Primary Name -->
+    <text x="0" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#f8fafc" letter-spacing="0.5">MinhYi</text>
+
+    <!-- Role / Track Subtitle -->
+    <text x="0" y="99" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#38bdf8" letter-spacing="2">DATA ENGINEERING  ·  AI ENGINEERING</text>
+
+    <!-- Descriptive Pillars -->
+    <text x="0" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#94a3b8" letter-spacing="0.3">Data Pipelines  ·  Database Systems  ·  Automation  ·  Applied ML</text>
+  </g>
+</svg>

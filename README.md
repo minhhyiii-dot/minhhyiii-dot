@@ -1,55 +1,51 @@
-## MinhYi
+<p align="center">
+  <img src="assets/minhyi-banner.svg" alt="MinhYi - Data Engineering & AI Engineering" width="100%" />
+</p>
 
-**Data Engineering · AI Engineering**
+<p align="center">
+  <strong>Building reliable data pipelines, automated workflows, and practical AI systems.</strong><br>
+  <sub>MIS student from Vietnam — interested in how solid data engineering turns raw models into dependable systems.</sub>
+</p>
 
-MIS student building data pipelines, reliable database workflows, and applied machine learning systems.
-
----
-
-### About & Focus
-
-I am a 20-year-old Management Information Systems (MIS) student from Vietnam. My technical direction is centered on data engineering, database systems, and applied AI workflows. While my academic background covers business context and data analytics, I focus on engineering: developing dependable pipelines, robust transformations, and practical automation that solve real problems.
-
-- **Primary Direction:** Data Engineering (pipelines, data modeling, automated ETL)
-- **Secondary Direction:** AI Engineering (applied machine learning workflows, automation)
-- **Approach:** Prioritizing reproducibility, clean data logic, and maintainability over flashy demos
-
----
-
-### Selected Projects
-
-#### [banking-risk-screener](https://github.com/minhhyiii-dot/banking-risk-screener)
-*Vietnamese Banking Earnings Risk Screener — Machine Learning Workflow & Portfolio MVP*
-- Explores an end-to-end machine learning workflow designed to screen quarterly earnings risk across Vietnamese commercial banks.
-- Encompasses raw data ingestion, cleaning, multi-source synchronization, feature engineering, target labeling, and a reproducible Python baseline.
-- Focuses on disciplined risk modeling and verifiable decision-support logic.
-
-#### [sql-analyst-bootcamp](https://github.com/minhhyiii-dot/sql-analyst-bootcamp)
-*42-Day SQL Training Journey — Relational Data & Business Logic*
-- Structured curriculum focused on daily query practice, schema design, and data validation.
-- Analyzes synthetic e-commerce transaction data engineered with real-world edge cases (orders without payment, mismatched settlement amounts, canceled orders).
-- Demonstrates data integrity verification, multi-table aggregation, and analytical SQL problem solving.
-
-#### [python-bootcamp](https://github.com/minhhyiii-dot/python-bootcamp)
-*84-Day Python Curriculum — Programming Independence*
-- Structured roadmap focused on building genuine coding independence and problem-solving rigor.
-- Strengthens foundational programming discipline: algorithmic reasoning, core data structures, and data manipulation with NumPy/Pandas.
-- Serves as the programming foundation for developing robust data pipelines and AI engineering solutions.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-1e293b?style=flat-square&logo=python&logoColor=38bdf8" alt="Python" />
+  <img src="https://img.shields.io/badge/SQL-1e293b?style=flat-square&logo=sqlite&logoColor=38bdf8" alt="SQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-1e293b?style=flat-square&logo=postgresql&logoColor=38bdf8" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Docker-1e293b?style=flat-square&logo=docker&logoColor=38bdf8" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-1e293b?style=flat-square&logo=git&logoColor=38bdf8" alt="Git" />
+  <img src="https://img.shields.io/badge/Power_BI-1e293b?style=flat-square&logo=powerbi&logoColor=38bdf8" alt="Power BI" />
+</p>
 
 ---
 
-### Core Stack
+### 🔨 Featured Builds
 
-- **Languages & Databases:** Python · SQL · PostgreSQL
-- **Engineering & Systems:** Git · GitHub · Docker (fundamentals) · Data Pipelines / ETL
-- **Analytics & Automation:** Power BI · n8n · Feature Engineering
+| Project | Focus | Stack |
+| :--- | :--- | :--- |
+| [**banking-risk-screener**](https://github.com/minhhyiii-dot/banking-risk-screener) | Vietnamese banking risk · raw data → feature pipeline → ML baseline | `Python` `Pandas` `ML` |
+| [**sql-analyst-bootcamp**](https://github.com/minhhyiii-dot/sql-analyst-bootcamp) | 42-day structured SQL journey modeling transactional edge cases & data logic | `SQL` `PostgreSQL` |
+| [**python-bootcamp**](https://github.com/minhhyiii-dot/python-bootcamp) | 84-day problem-solving roadmap focused on engineering & coding independence | `Python` `Algorithms` |
 
 ---
 
-### Connect
+### ⚡ Activity
 
-- **GitHub:** [github.com/minhhyiii-dot](https://github.com/minhhyiii-dot)
-<!-- Add your verified contact links below:
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/)
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=minhhyiii-dot&show_icons=true&hide_border=true&theme=tokyonight" height="150" alt="MinhYi's GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=minhhyiii-dot&theme=tokyonight&hide_border=true" height="150" alt="MinhYi's GitHub Streak" />
+</p>
+
+---
+
+### 📬 Connect
+
+<p align="center">
+  <a href="https://github.com/minhhyiii-dot"><img src="https://img.shields.io/badge/GitHub-minhhyiii--dot-1e293b?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
+
+<!-- To add more contact links when ready:
+<p align="center">
+  <a href="https://linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-Profile-1e293b?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-Contact-1e293b?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 -->
