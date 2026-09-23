@@ -31,7 +31,7 @@
 ### ⚡ Activity
 
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=minhhyiii-dot&show_icons=true&hide_border=true&theme=tokyonight" height="160" alt="MinhYi's GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api?username=minhhyiii-dot&show_icons=true&hide_border=true&theme=tokyonight&hide_rank=true" height="160" alt="MinhYi's GitHub Stats" />
   <img src="https://streak-stats.demolab.com?user=minhhyiii-dot&theme=tokyonight&hide_border=true" height="160" alt="MinhYi's GitHub Streak" />
 </p>
 
