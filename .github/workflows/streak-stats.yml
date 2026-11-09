@@ -1,0 +1,54 @@
+name: Update GitHub streak
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 0 * * *' # 07:15 Vietnam time
+  push:
+    branches: [main]
+    paths: ['.github/workflows/streak-stats.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-streak
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Generate contribution streak SVG
+        uses: DenverCoder1/github-readme-streak-stats@125aaaf200620410446ebfa51897fca3607e04fd # v1
+        with:
+          options: user=${{ github.repository_owner }}&theme=tokyonight&background=171a1e&border=292d33&stroke=292d33&ring=8ab5ff&fire=8ab5ff&currStreakNum=eef0f3&sideNums=eef0f3&currStreakLabel=8ab5ff&sideLabels=a0a6b0&dates=a0a6b0&border_radius=6&disable_animations=true&timezone=Asia%2FHo_Chi_Minh
+          path: profile/streak.svg
+
+      - name: Verify and publish changed image
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from xml.etree import ElementTree
+
+          svg = Path('profile/streak.svg')
+          root = ElementTree.parse(svg).getroot()
+          if root.tag != '{http://www.w3.org/2000/svg}svg':
+              raise SystemExit('Expected an SVG streak card')
+          labels = ' '.join(' '.join(root.itertext()).split())
+          for label in ('Total Contributions', 'Current Streak', 'Longest Streak'):
+              if label not in labels:
+                  raise SystemExit(f'Streak card is missing {label}')
+          PY
+          git add -- profile/streak.svg
+          if git diff --cached --quiet -- profile/streak.svg; then
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'Refresh GitHub streak card' -- profile/streak.svg
+          git push origin HEAD:main
